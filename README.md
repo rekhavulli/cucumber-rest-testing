@@ -30,8 +30,13 @@ Cucumber + Extent Report for automating the API's.
 * JDK11
 
 
-## Execution ScreenShots:
+## Execution Screenshots:
 
+### Dashboard:
 ![Dashboard](https://github.com/rekhavulli/cucumber-rest-testing/blob/main/result-screenshots/Dashboard_Screenshot.png?raw=true)
+
+### Feature:
+![Feature](https://github.com/rekhavulli/cucumber-rest-testing/blob/main/result-screenshots/Features_Screenshot.png?raw=true)
+
 
 
