@@ -1,6 +1,6 @@
 #Author : Rekha
-Feature: GET: RestApi
-  Description: GET: purpose of this feature is to test jsonplaceholder.
+Feature: US001: JsonPlaceHolder GET functionality
+  Description: Purpose of this feature is to test jsonplaceholder GET Api.
 
   @get
   Scenario Outline: GET: Test the jsonplaceholder
@@ -11,5 +11,5 @@ Feature: GET: RestApi
 
     Examples: 
       | TestName  | URL           | ContentType      | RequestBody | RequestMethod | StatusCode |
-      | RestApiGet| /posts/1      | application/json |             | GET           |        200 |
+      |     Get   | /posts/1      | application/json |             | GET           |        200 |
 

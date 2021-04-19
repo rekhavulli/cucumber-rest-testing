@@ -1,6 +1,6 @@
 #Author: Rekha
-Feature: POST: RestApi
-  Description: POST: The purpose of this feature is to test jsonplaceholder.
+Feature: US002: JsonPlaceHolder POST functionality
+Description: The purpose of this feature is to test jsonplaceholder POST Api.
 
   @post
   Scenario Outline: POST: Test the jsonplaceholder
@@ -12,6 +12,6 @@ Feature: POST: RestApi
 
     Examples: 
       | TestName  | URL        | ContentType      | RequestBody        | RequestMethod | StatusCode |
-      |RestApiPost| /posts     | application/json | testdata/test.json | POST          |        201 |
+      | Post      | /posts     | application/json | testdata/test.json | POST          |        201 |
 
 

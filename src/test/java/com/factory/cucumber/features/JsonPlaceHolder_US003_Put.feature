@@ -1,7 +1,7 @@
 #Author: Rekha
-Feature: PUT: RestAPI
+Feature: US002: JsonPlaceHolder PUT functionality
+Description: The purpose of this feature is to test jsonplaceholder PUT Api.
 
-  Description: PUT: The purpose of this feature is to test jsonplaceholder.
 
   @put
   Scenario Outline: PUT: Test the jsonplaceholder

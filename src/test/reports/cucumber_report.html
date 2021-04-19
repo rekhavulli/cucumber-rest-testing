@@ -53,7 +53,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Apr 19, 2021 12:40:29 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Apr 19, 2021 01:28:13 PM</span>
 				</a>
 			</li>
 			<li>
@@ -91,10 +91,10 @@
 					<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@delete</a></li>
+					<li><a href='#'>@get</a></li>
 					<li><a href='#'>@post</a></li>
 					<li><a href='#'>@put</a></li>
-					<li><a href='#'>@get</a></li>
+					<li><a href='#'>@delete</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -191,30 +191,30 @@
 				
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>DELETE: Automated Demo Tests</span>
-						<span class='test-time'>Apr 19, 2021 12:40:30 PM</span>
+						<span class='test-name'>US001: JsonPlaceHolder GET functionality</span>
+						<span class='test-time'>Apr 19, 2021 01:28:13 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenariooutline node' test-id='2' status='pass'>
-	<span class='duration right label'>0h 0m 2s+799ms</span>
+	<span class='duration right label'>0h 0m 2s+739ms</span>
 	<div class='desc'>
 		<b>ScenarioOutline</b>
-		<span class="desc-text">DELETE: Test the Demo app</span>
+		<span class="desc-text">GET: Test the jsonplaceholder</span>
 	</div>
 	<ul class='steps'>
 		<li test-id='3' class='node scenario pass' status='pass'>
 			<div class='category-list'>
-				<span class='category label white-text'>@delete</span>
+				<span class='category label white-text'>@get</span>
 			</div>
 			
 			<b>Scenario</b>
 			
-			<span class="bdd-step-name">DELETE: Test the Demo app</span>
+			<span class="bdd-step-name">GET: Test the jsonplaceholder</span>
 			
 				<ul class='steps'>
 					<li test-id='4' class='node given pass' status='pass'><b>Given</b>
-						<span class="bdd-step-name">Given I want to set URL as "/posts/1" for test case "RestapiDelete"</span>
+						<span class="bdd-step-name">Given I want to set URL as "/posts/1" for test case "Get"</span>
 							<div class='pre'>pass :: Cucumber Hostname URL is :: http://jsonplaceholder.typicode.com/posts/1</div>
 							<div class='pre'>passed</div>
 					</li>
@@ -224,9 +224,14 @@
 							<div class='pre'>passed</div>
 					</li>
 					<li test-id='6' class='node when pass' status='pass'><b>When</b>
-						<span class="bdd-step-name">When I hit the API with requestbody "" and request method is "DELETE"</span>
+						<span class="bdd-step-name">When I hit the API with requestbody "" and request method is "GET"</span>
 							<div class='pre'>pass :: Request successfully processed</div>
-							<div class='pre'>Response is :: {}</div>
+							<div class='pre'>Response is :: {
+  "userId": 1,
+  "id": 1,
+  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+  "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+}</div>
 							<div class='pre'>passed</div>
 					</li>
 					<li test-id='7' class='node then pass' status='pass'><b>Then</b>
@@ -244,13 +249,13 @@
 				
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='8'>
 					<div class='test-heading'>
-						<span class='test-name'>POST: RestApi</span>
-						<span class='test-time'>Apr 19, 2021 12:40:32 PM</span>
+						<span class='test-name'>US002: JsonPlaceHolder POST functionality</span>
+						<span class='test-time'>Apr 19, 2021 01:28:16 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenariooutline node' test-id='9' status='pass'>
-	<span class='duration right label'>0h 0m 0s+207ms</span>
+	<span class='duration right label'>0h 0m 0s+190ms</span>
 	<div class='desc'>
 		<b>ScenarioOutline</b>
 		<span class="desc-text">POST: Test the jsonplaceholder</span>
@@ -267,7 +272,7 @@
 			
 				<ul class='steps'>
 					<li test-id='11' class='node given pass' status='pass'><b>Given</b>
-						<span class="bdd-step-name">Given I want to set URL as "/posts" for test case "RestApiPost"</span>
+						<span class="bdd-step-name">Given I want to set URL as "/posts" for test case "Post"</span>
 							<div class='pre'>pass :: Cucumber Hostname URL is :: http://jsonplaceholder.typicode.com/posts</div>
 							<div class='pre'>passed</div>
 					</li>
@@ -309,13 +314,13 @@
 				
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='16'>
 					<div class='test-heading'>
-						<span class='test-name'>PUT: RestAPI</span>
-						<span class='test-time'>Apr 19, 2021 12:40:33 PM</span>
+						<span class='test-name'>US002: JsonPlaceHolder PUT functionality</span>
+						<span class='test-time'>Apr 19, 2021 01:28:16 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenariooutline node' test-id='17' status='pass'>
-	<span class='duration right label'>0h 0m 0s+243ms</span>
+	<span class='duration right label'>0h 0m 0s+225ms</span>
 	<div class='desc'>
 		<b>ScenarioOutline</b>
 		<span class="desc-text">PUT: Test the jsonplaceholder</span>
@@ -374,30 +379,30 @@
 				
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='24'>
 					<div class='test-heading'>
-						<span class='test-name'>GET: RestApi</span>
-						<span class='test-time'>Apr 19, 2021 12:40:33 PM</span>
+						<span class='test-name'>US004: JsonPlaceHolder DELETE functionality</span>
+						<span class='test-time'>Apr 19, 2021 01:28:16 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenariooutline node' test-id='25' status='pass'>
-	<span class='duration right label'>0h 0m 0s+106ms</span>
+	<span class='duration right label'>0h 0m 0s+298ms</span>
 	<div class='desc'>
 		<b>ScenarioOutline</b>
-		<span class="desc-text">GET: Test the jsonplaceholder</span>
+		<span class="desc-text">DELETE: Test the jsonplaceholder</span>
 	</div>
 	<ul class='steps'>
 		<li test-id='26' class='node scenario pass' status='pass'>
 			<div class='category-list'>
-				<span class='category label white-text'>@get</span>
+				<span class='category label white-text'>@delete</span>
 			</div>
 			
 			<b>Scenario</b>
 			
-			<span class="bdd-step-name">GET: Test the jsonplaceholder</span>
+			<span class="bdd-step-name">DELETE: Test the jsonplaceholder</span>
 			
 				<ul class='steps'>
 					<li test-id='27' class='node given pass' status='pass'><b>Given</b>
-						<span class="bdd-step-name">Given I want to set URL as "/posts/1" for test case "RestApiGet"</span>
+						<span class="bdd-step-name">Given I want to set URL as "/posts/1" for test case "Delete"</span>
 							<div class='pre'>pass :: Cucumber Hostname URL is :: http://jsonplaceholder.typicode.com/posts/1</div>
 							<div class='pre'>passed</div>
 					</li>
@@ -407,14 +412,9 @@
 							<div class='pre'>passed</div>
 					</li>
 					<li test-id='29' class='node when pass' status='pass'><b>When</b>
-						<span class="bdd-step-name">When I hit the API with requestbody "" and request method is "GET"</span>
+						<span class="bdd-step-name">When I hit the API with requestbody "" and request method is "DELETE"</span>
 							<div class='pre'>pass :: Request successfully processed</div>
-							<div class='pre'>Response is :: {
-  "userId": 1,
-  "id": 1,
-  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
-  "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
-}</div>
+							<div class='pre'>Response is :: {}</div>
 							<div class='pre'>passed</div>
 					</li>
 					<li test-id='30' class='node then pass' status='pass'><b>Then</b>
@@ -480,7 +480,7 @@
 				
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@delete</span>
+						<span class='category-name'>@get</span>
 						<span class='category-status right'>
 							<span class='label pass'>1</span>
 						</span>
@@ -503,8 +503,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Apr 19, 2021 12:40:30 PM</td>
-										<td class='linked' test-id='3'>DELETE: Automated Demo Tests.DELETE: Test the Demo app.DELETE: Test the Demo app</td>
+										<td>Apr 19, 2021 01:28:13 PM</td>
+										<td class='linked' test-id='3'>US001: JsonPlaceHolder GET functionality.GET: Test the jsonplaceholder.GET: Test the jsonplaceholder</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -537,8 +537,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Apr 19, 2021 12:40:32 PM</td>
-										<td class='linked' test-id='10'>POST: RestApi.POST: Test the jsonplaceholder.POST: Test the jsonplaceholder</td>
+										<td>Apr 19, 2021 01:28:16 PM</td>
+										<td class='linked' test-id='10'>US002: JsonPlaceHolder POST functionality.POST: Test the jsonplaceholder.POST: Test the jsonplaceholder</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -571,8 +571,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Apr 19, 2021 12:40:33 PM</td>
-										<td class='linked' test-id='18'>PUT: RestAPI.PUT: Test the jsonplaceholder.PUT: Test the jsonplaceholder</td>
+										<td>Apr 19, 2021 01:28:16 PM</td>
+										<td class='linked' test-id='18'>US002: JsonPlaceHolder PUT functionality.PUT: Test the jsonplaceholder.PUT: Test the jsonplaceholder</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -582,7 +582,7 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@get</span>
+						<span class='category-name'>@delete</span>
 						<span class='category-status right'>
 							<span class='label pass'>1</span>
 						</span>
@@ -605,8 +605,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Apr 19, 2021 12:40:33 PM</td>
-										<td class='linked' test-id='26'>GET: RestApi.GET: Test the jsonplaceholder.GET: Test the jsonplaceholder</td>
+										<td>Apr 19, 2021 01:28:16 PM</td>
+										<td class='linked' test-id='26'>US004: JsonPlaceHolder DELETE functionality.DELETE: Test the jsonplaceholder.DELETE: Test the jsonplaceholder</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -653,19 +653,19 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Apr 19, 2021 12:40:29 PM</div>
+					<div class='panel-lead'>Apr 19, 2021 01:28:13 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Apr 19, 2021 12:40:33 PM</div>
+			 		<div class='panel-lead'>Apr 19, 2021 01:28:17 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>3,774ms</div>
+					<div class='panel-lead'>3,933ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -683,7 +683,7 @@
 							</tr>
 							<tr>
 								<td>os</td>
-								<td>Windows 10</td>
+								<td>Mac OS X</td>
 							</tr>
 					</table>
 				</div>
@@ -701,7 +701,7 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@delete</td>
+							<td>@get</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -728,7 +728,7 @@
 							</td>
 						</tr>
 						<tr>
-							<td>@get</td>
+							<td>@delete</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -748,7 +748,7 @@
 		<h5>TestRunner Logs</h5>
 		
 		<div class='card-panel'>
-				Sample test runner output message
+				JsonPlaceHolder Api test
 		</div>
 	</div>
 </div>
