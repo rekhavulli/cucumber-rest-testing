@@ -1,5 +1,5 @@
 # cucumber-rest-testing
-This automation test suite is to automate the Rest api's for 'Jsonplaceholder' website.
+This automation test suite is to automate the Rest API's for 'Jsonplaceholder' website.
 
 Framework used for Automation:
 
@@ -32,6 +32,6 @@ Cucumber + Extent Report for automating the API's.
 
 ## Execution ScreenShots:
 
-![Dashboard] (https://github.com/rekhavulli/cucumber-rest-testing/blob/main/result-screenshots/Dashboard_Screenshot.png?raw=true)
+![Dashboard](https://github.com/rekhavulli/cucumber-rest-testing/blob/main/result-screenshots/Dashboard_Screenshot.png?raw=true)
 
 
